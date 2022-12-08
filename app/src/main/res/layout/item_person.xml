@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/image_programm"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:background="@drawable/video_image"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_programm_mini"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/newyork"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_programm"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/text_programm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/image_programm"
+        app:layout_constraintTop_toBottomOf="@id/image_programm"
+        app:layout_constraintStart_toEndOf="@id/image_programm_mini"
+        android:text="@string/program_name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
